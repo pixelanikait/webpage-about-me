@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <title>Projects</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <label class="theme-switch">
+                    <input type="checkbox" id="theme-toggle" aria-label="Toggle dark mode">
+                    <span class="slider"></span>
+                </label>
+            </nav>
+        </header>
+        <main>
+            <section class="content">
+                <h2>My Projects</h2>
+                <a href="https://github.com/pixelanikait/Music-player-backend" target="_blank" class="project">
+                    <h3>Music player backend</h3>
+                    <p>A command line C implementation of a music player that handles queues, playlists,albums,etc. Built to understand data structures like
+                        linked-list and their uses in real applications.</p>
+                    <p>One tradeoff I made was sacrificing the ability to handle extremely large music libraries so I could use simpler data 
+                        structures.</p>
+                    <p>Doing it again, I would probably allow it to work more efficiently for bigger libraries and maybe be able to handle 
+                        multiple users at once.</p>
+                </a>
+                <a href="https://github.com/pixelanikait/cli-twixt-implementation" target="_blank" class="project">
+                    <h3>Twixt</h3>
+                    <p>A command line implementation of the game twixt in C. It auto creates links between pegs and checks for link 
+                        intercepts. I built it to get a understanding of graphs and depth searches.</p>
+                    <p>One tradeoff I made was sacrificing efficiency for a more robust link check system along with checking for a 
+                        win on every move.
+                    </p>
+                    <p>Doing it again, I would implement a more efficient win-check and linking algorithm. I would also like to change 
+                        the current interface into a pop-out interface so users could point and click pegs instead of inputting coordinates as
+                        sometimes coordinates can be misread.
+                    </p>
+                </a>
+                <a href="https://github.com/pixelanikait/my-spam-classifier" target="_blank" class="project">
+                    <h3>Spam message checker</h3>
+                    <p>A python application that uses command line to take input and display output. Taking a message it uses TF-IDF 
+                        vectorization along with a Multinomial Naive-Bayes algorithm to check if a message is spam. I built it to gain
+                        a better understanding of text vectorization and models.
+                    </p>
+                    <p>One tradeoff I made was the necessity to retrain the model every time it predicted an input wrong. It was also 
+                        extremely hard to direct the model to not drop certain words that would be a good indicator if a message was spam.
+                    </p>
+                    <p>I would like to further improve the project by maybe testing a few more models along with maybe linking it to my
+                        email or whatsapp so it has some practical usage. I would also like to increase the size of the data-set to include
+                        more realistic examples.
+                    </p>
+                </a>
+            </section>
+        </main>
+        <footer>
+            <p>© 2026 Anikait Kulkarni</p>
+        </footer>
+        <script src="js/theme.js"></script>
+        <script src="js/progress.js"></script>
+        <script src="js/scroll.js"></script>
+        <script src="js/timeline.js"></script>
+        <script src="js/form.js"></script>
+    </body>
+</html>
+
