@@ -4,7 +4,7 @@ A small webpage about me covering where I am at right now, a small timeline abou
 
 ## Installation:
 
-`git clone https://github.com/pixelanikait/wepage-about-me`
+`git clone https://github.com/pixelanikait/webpage-about-me`
 
 `cd webpage-about-me`
 
