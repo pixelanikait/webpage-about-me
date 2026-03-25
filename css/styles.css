@@ -548,16 +548,20 @@ input, textarea{
     }
 }
 
-.contact-card svg{
+.contact-card .icon{
     width: 28px;
     height: 28px;
-    color: var(--button-color-1);
-    margin-bottom: 6px;
+    stroke: currentColor;
 }
 
 .contact-card:hover{
     transform: translateY(-5px) scale(1.05);
     box-shadow:0 6px 16px rgba(0,0,0,0.12);
+}
+
+.contact-card:hover .icon{
+    transform: scale(1.1);
+    transition: transform 0.25s ease;
 }
 
 .contact-card:hover h3{
@@ -575,6 +579,7 @@ input, textarea{
     color:var(--button-color-1);
     font-weight:500;
     font-family: var(--font-4);
+    transition: all 0.4 ease;
 }
 
 #contact-form{
@@ -620,10 +625,11 @@ input, textarea{
     color: white;
 }
 
-.contact-submit svg{
+.contact-submit .icon{
     width:18px;
     height:18px;
 }
+
 
 /* Footer */
 
@@ -744,11 +750,11 @@ footer{
     color: var(--dark-mode-1);
 }
 
-.dark-mode .contact-card svg{
+.dark-mode .contact-card .icon{
     color: var(--dark-mode-4);
 }
 
-.dark-mode .contact-card:hover svg{
+.dark-mode .contact-card:hover .icon{
     color: var(--dark-mode-3);
 }
 
